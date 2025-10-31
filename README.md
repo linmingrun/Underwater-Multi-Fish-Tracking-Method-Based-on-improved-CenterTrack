@@ -11,3 +11,9 @@ cascade matching strategy further improve accuracy. Experimental results
 on the MF25 dataset demonstrate superior performance with 82.5% IDF1,
 85.8% MOTA, and 84.7% IDP, showcasing the potential of our approach
 for industrial-scale aquaculture surveillance.
+
+## Training
+python train.py --dataset mf25 --batch_size 8 --lr 1e-4
+
+## Evaluation
+python test.py --dataset mf25 --resume checkpoints/model_best.pth
